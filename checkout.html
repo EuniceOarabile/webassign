@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Checkout - Claire Cafe</title>
+    <link rel="stylesheet" href="style.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <li><a href="index.html"><img class="logo-img" src="logo2.png" alt=""></a></li>
+                <li><a href="index.html"><h1 class="logo-text">Claire <span class="logo-text-part">Cafe</span></h1></a></li>  
+            </div>
+           
+            <nav id="mainNav">
+                <div class="nav-toggle" id="nav-toggle">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <script>
+        document.getElementById("nav-toggle").onclick = function () {
+          document.getElementById("nav-links").classList.toggle("active");
+        };
+      </script>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="cart.html" class="active"><i class="fas fa-shopping-cart"></i> <span id="cartCount">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Checkout Section -->
+    <section class="checkout-section">
+        <div class="container">
+            <h1>Checkout</h1>
+            <div id="cartItems"></div>
+            <div id="cartSummary"></div>
+
+            <h2>Shipping & Payment Information</h2>
+            <form id="checkoutForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required />
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                    <label for="paymentMethod">Payment Method</label>
+                    <select id="paymentMethod" name="paymentMethod" required>
+                        <option value="">Select a payment method</option>
+                        <option value="creditCard">Credit Card</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="cash">Cash on Delivery</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Place Order</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Claire Cafe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/cart.js"></script>
+    <script>
+        // Render cart items and summary on checkout page
+        document.addEventListener('DOMContentLoaded', () => {
+            if (document.getElementById('cartItems')) {
+                renderCart();
+                updateCartCount();
+            }
+        });
+
+        // Handle checkout form submission
+        document.getElementById('checkoutForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Simple validation could be enhanced here
+            alert('Thank you for your order! Your order has been placed successfully.');
+
+            // Clear cart after order
+            localStorage.removeItem('claireCafeCart');
+            updateCartCount();
+            renderCart();
+
+            // Optionally redirect to home or order confirmation page
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>

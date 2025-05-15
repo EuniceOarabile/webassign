@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claire Cafe - Where Every Sip Feels Like Home</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="js/script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+          <div class="logo">
+            <li><a href="index.html"><img class="logo-img" src="logo2.png" alt=""></a></li>
+            <li><a href="index.html"><h1 class="logo-text">Claire <span class="logo-text-part">Cafe</span></h1></a></li>  
+        </div>
+            <nav id="mainNav">
+              <div class="nav-toggle" id="nav-toggle">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <script>
+        document.getElementById("nav-toggle").onclick = function () {
+          document.getElementById("nav-links").classList.toggle("active");
+        };
+      </script>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cartCount">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+   <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="hero-bg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="hero-content">
+        <h1 class="hero-title">Brewed to Perfection</h1>
+        <p>Experience a new era of coffee where innovation and tradition blend seamlessly.</p>
+        <div class="cta-container">
+          <a href="menu.html" class="cta-button">Explore Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured">
+      <div class="section-header">
+        <h2>Featured <span>Creations</span></h2>
+        <p>Our signature drinks reimagined for the future</p>
+      </div>
+      <div class="featured-grid">
+        <div class="featured-card">
+          <div class="card-image"></div>
+          <div class="card-content">
+            <h3>Quantum Espresso</h3>
+            <p>Our signature espresso infused with vanilla and caramel notes</p>
+            <span class="price">P11.00</span>
+          </div>
+        </div>
+        <div class="featured-card">
+          <div class="card-image"></div>
+          <div class="card-content">
+            <h3>Nebula Latte</h3>
+            <p>Color-changing latte art with hints of lavender and honey</p>
+            <span class="price">P16.35</span>
+          </div>
+        </div>
+        <div class="featured-card">
+          <div class="card-image"></div>
+          <div class="card-content">
+            <h3>Cosmic Cold Brew</h3>
+            <p>24-hour steeped coffee with star anise and citrus zest</p>
+            <span class="price">P23.85</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+      <div class="experience-content">
+        <h2>Experience the <span>Claire</span> Difference</h2>
+        <p>Our café combines artisanal coffee craft with futuristic presentation and ambiance. Each visit is a journey through taste, aroma, and visual delight.</p>
+        <a href="about.html" class="text-link">Learn our story <span class="arrow">→</span></a>
+      </div>
+      <div class="experience-grid">
+        <div class="exp-item">
+          <div class="exp-icon bean-icon"></div>
+          <h3>Premium Beans</h3>
+          <p>Ethically sourced and carefully selected</p>
+        </div>
+        <div class="exp-item">
+          <div class="exp-icon brew-icon"></div>
+          <h3>Precision Brewing</h3>
+          <p>Temperature-controlled extraction</p>
+        </div>
+        <div class="exp-item">
+          <div class="exp-icon atmosphere-icon"></div>
+          <h3>Immersive Atmosphere</h3>
+          <p>Designed for focus and connection</p>
+        </div>
+        <div class="exp-item">
+          <div class="exp-icon innovation-icon"></div>
+          <h3>Constant Innovation</h3>
+          <p>New flavors and experiences monthly</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="newsletter-container">
+        <h2>Stay <span>Connected</span></h2>
+        <p>Subscribe to receive updates on new menu items and special events</p>
+        <form id="newsletter-form">
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Your email address" required>
+            <button type="submit" class="submit-btn">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>About Us</h3>
+                    <p>Claire Cafe is a cozy coffee shop dedicated to serving high-quality coffee and creating a warm, welcoming atmosphere for our customers.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Coffee Street, Brewville, CA 90210</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>(123) 456-7890</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@clairecafe.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest updates and special offers.</p>
+                    <form class="footer-newsletter">
+                        <input type="email" placeholder="Your Email Address">
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Claire Cafe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+  
+    <script src="js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - Claire Cafe</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="js/script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="cart-page">
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <li><a href="index.html"><img class="logo-img" src="logo2.png" alt=""></a></li>
+                <li><a href="index.html"><h1 class="logo-text">Claire <span class="logo-text-part">Cafe</span></h1></a></li>  
+            </div>
+           
+            <nav id="mainNav">
+                <div class="nav-toggle" id="nav-toggle">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <script>
+        document.getElementById("nav-toggle").onclick = function () {
+          document.getElementById("nav-links").classList.toggle("active");
+        };
+      </script>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="cart.html" class="active"><i class="fas fa-shopping-cart"></i> <span id="cartCount">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="cart-main">
+        <section class="cart-section">
+            <div class="container">
+                <h1>Your Cart</h1>
+                
+                <div class="cart-container">
+                    <div class="cart-items" id="cartItems">
+                        <!-- Cart items will load here -->
+                        <div class="empty-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Your cart is empty</p>
+                            <a href="menu.html" class="btn">Browse Menu</a>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-summary" id="cartSummary">
+                        <!-- Order summary will load here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="cart-footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Claire Cafe</h3>
+                    <p>Where every sip feels like home</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Hours</h3>
+                    <p>Monday-Friday: 7am-9pm</p>
+                    <p>Saturday-Sunday: 8am-10pm</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <p>123 Coffee Street</p>
+                    <p>Brewville, CA 90210</p>
+                    <p>(123) 456-7890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Claire Cafe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
